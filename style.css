@@ -1,8 +1,14 @@
 /*general*/
 
 *{
-    border: 2px solid blue;
+    border: solid 2px blueviolet;
+    max-width: 1400px;  
 }
+
+.fa-solid{
+  color: #0065FC;
+}
+
 
 body{
     margin: 0;
@@ -32,3 +38,269 @@ nav ul{
 nav li{
     margin:0 67px 0 77px;
 }
+
+nav li a{
+    text-decoration: none;       
+   
+}
+
+nav a:hover{
+    border-top: 2px solid #0065FC;
+}
+
+
+/* Main*/
+
+
+  .trouvez{
+    padding-left: 30px;
+}
+
+   section h1{
+   margin-left: 0;
+    height: 26px;
+    margin-top: 63px;
+}
+
+   h1 p{
+    margin-left: 55px;
+   
+    height: 19px;
+    }
+
+   .recherche{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 55px;
+        width: 250px;
+        margin-top: 20px;
+    }
+
+   .recherche i{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 49px;
+        background-color: #F2F2F2;
+        border-radius: 10px 0 0 10px;
+    }
+
+   .recherche button{
+        background-color: #0065FC;
+        border-radius: 0 15px 15px 0;
+        border: 1px solid #0065FC;
+        width: 132px;
+        height: 49px;
+        color: white;
+        
+    }
+
+   input{
+        width: 132px;
+        height:43px ;
+        border: 1px solid #F2F2F2;
+        outline: none;   
+    }
+
+  .filtre{
+        display: flex;
+        flex-direction: column;
+        width: 800px;
+        padding-left: 30px;
+       
+        
+    }
+
+  .box1{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 25px;
+        margin-top: 32px;
+        justify-content: space-between;
+        align-items: center;
+    }
+  .box2{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+  .bouton{
+        border: 2px solid grey;
+        border-radius: 25px;
+        box-sizing: border-box;
+        height: 50px;
+        background-color: white;
+    }
+
+    /* hebergement*/
+
+
+  .hebergement{
+        border-radius: 15px;
+        background-color:  #F2F2F2;
+        padding: 0px 30px 0px 30px;
+        margin:  40px 0 0 50px;
+        width: 640px;
+    }
+
+  .hebergement h1{
+        margin: 0px 0px 25px 0px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    
+
+  .card{
+    width: 300px;
+    height: 240px;
+    border-radius: 20px;
+    border: 5px solid white;
+    background-color: white;
+   }
+
+
+  .card img{
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 19px 19px 0px  0px;
+  }
+  
+  .card-text{
+    height: 70px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    background-color: white;
+  }
+
+  .container1,.container2{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  /* populaire*/
+
+  .populaire{
+    width: 450px;
+    height: 720px;
+    background-color:  #F2F2F2;
+    border-radius: 20px;
+    padding: 30px 30px 30px 30px;
+    margin: 40px 50px 0 40px;
+    }
+   
+
+  .pop-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+    }
+
+  .pop-card{
+    width: 450px;
+    height: 170px;
+    border-radius: 20px;
+    border: 5px solid white;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    margin-top: 30px;
+    overflow: hidden;
+    }
+
+ .pop-card img{ 
+    width: 50%;
+    border: 3px solid white;
+    border-radius: 20px 0px 0px 20px;
+    }
+
+  .pop-text{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+    padding-left: 15px;
+    }
+
+  .pop-text h3,p{
+    margin: 0;
+    padding-left: 10px;
+    }
+
+  .stars{
+  justify-self: end;
+  }
+
+
+  #flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+
+    /* activités*/
+
+    .activite{
+      padding: 0 30px 0 30px;
+    }
+
+    .activite-card{
+     width: 300px;  
+     height: 450px;
+     border-radius: 20px;
+     overflow: hidden;
+     box-shadow: 2px 2px  #F2F2F2; 
+
+    }
+
+    .activite-card img{
+        object-fit: cover;
+        width: 100%;
+        height: 85%;
+    }
+
+    .activite-card h3{
+        padding-left: 10px;
+        font-size: 16px;
+    }
+
+    .activite-bloc{
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   /* Footer*/
+
+
+   footer{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #F2F2F2;
+    height: 240px;
+    padding-top: 40px;
+    margin: 50px 30px 0 30px;
+    
+   }
