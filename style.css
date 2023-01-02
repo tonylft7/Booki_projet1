@@ -2,25 +2,44 @@
 
 *{
     border: solid 2px blueviolet;
-    max-width: 1400px;  
+     
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .fa-solid{
   color: #0065FC;
 }
 
+a{
+  text-decoration: none;       
+ 
+}
+
+
+.strong{
+  font-weight: bold;
+}
+
 
 body{
     margin: 0;
+    padding: 0 30px 0 30px;
     font-family: 'Raleway', sans-serif;
+    max-width: 1400px;
 }
 
 /* header*/
 
 header nav img{
-width: 61.09px;
+width: 60px;
 height: 19px;
-margin-left: 55px;
+
+
 
 }
 
@@ -28,21 +47,22 @@ header nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top:15px ;
+    height: 100px;
+    
 }
 
 nav ul{
     display: flex;
-    list-style: none;   
+    list-style: none; 
+    height: 100%;  
 }
 
 nav li{
     margin:0 67px 0 77px;
 }
 
-nav li a{
-    text-decoration: none;       
-   
-}
+
 
 nav a:hover{
     border-top: 2px solid #0065FC;
@@ -52,21 +72,24 @@ nav a:hover{
 /* Main*/
 
 
-  .trouvez{
-    padding-left: 30px;
-}
-
    section h1{
-   margin-left: 0;
+    margin-bottom: 15px;
     height: 26px;
     margin-top: 63px;
 }
 
    h1 p{
-    margin-left: 55px;
-   
+    margin-left: 0px;
     height: 19px;
     }
+
+
+    form{
+
+      display: flex;
+    }
+
+   
 
    .recherche{
         display: flex;
@@ -82,17 +105,17 @@ nav a:hover{
         align-items: center;
         justify-content: center;
         width: 50px;
-        height: 49px;
+        height: 43px;
         background-color: #F2F2F2;
         border-radius: 10px 0 0 10px;
     }
 
-   .recherche button{
+   form button{
         background-color: #0065FC;
         border-radius: 0 15px 15px 0;
         border: 1px solid #0065FC;
         width: 132px;
-        height: 49px;
+        height: 42px;
         color: white;
         
     }
@@ -107,10 +130,11 @@ nav a:hover{
   .filtre{
         display: flex;
         flex-direction: column;
-        width: 800px;
-        padding-left: 30px;
-       
-        
+        width: 800px;   
+    }
+
+  .filtre-icon{
+      margin-right: 10px;
     }
 
   .box1{
@@ -127,12 +151,29 @@ nav a:hover{
         align-items: center;
     }
 
-  .bouton{
+    .box2 i{
+      text-align: center;
+      margin-right: 10px;
+    }
+
+    .fa-info{
+      border: 2px solid  #F2F2F2;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+     
+    }
+
+  .bouton-filtre{
         border: 2px solid grey;
         border-radius: 25px;
-        box-sizing: border-box;
         height: 50px;
+        padding: 0 5px 0 5px;
         background-color: white;
+    }
+
+    .bouton-filtre:hover{
+      background-color:#DEEBFF;
     }
 
     /* hebergement*/
@@ -141,9 +182,9 @@ nav a:hover{
   .hebergement{
         border-radius: 15px;
         background-color:  #F2F2F2;
-        padding: 0px 30px 0px 30px;
-        margin:  40px 0 0 50px;
-        width: 640px;
+        padding: 0px 40px 0 20px;
+        margin-top:  40px;
+        flex: 2;
     }
 
   .hebergement h1{
@@ -155,11 +196,12 @@ nav a:hover{
     
 
   .card{
-    width: 300px;
-    height: 240px;
+    height: 220px;
+    width: 240px;
     border-radius: 20px;
     border: 5px solid white;
     background-color: white;
+    color: black;
    }
 
 
@@ -167,9 +209,14 @@ nav a:hover{
     box-sizing: border-box;
     width: 100%;
     border-radius: 19px 19px 0px  0px;
+    object-fit: cover;
+    height: 60%;
   }
   
   .card-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 70px;
     padding-left: 5px;
     padding-bottom: 5px;
@@ -185,12 +232,13 @@ nav a:hover{
   /* populaire*/
 
   .populaire{
-    width: 450px;
+    width:;
     height: 720px;
     background-color:  #F2F2F2;
     border-radius: 20px;
     padding: 30px 30px 30px 30px;
-    margin: 40px 50px 0 40px;
+    margin: 40px 0 0 40px;
+    flex: 1;
     }
    
 
@@ -199,11 +247,10 @@ nav a:hover{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 0px;
     }
 
   .pop-card{
-    width: 450px;
+    width: 343px;
     height: 170px;
     border-radius: 20px;
     border: 5px solid white;
@@ -223,14 +270,11 @@ nav a:hover{
   .pop-text{
     display: flex;
     flex-direction: column;
-    padding-top: 5px;
-    padding-left: 15px;
+    padding: 5px 10px 5px 10px;
+    justify-content: space-between;
     }
 
-  .pop-text h3,p{
-    margin: 0;
-    padding-left: 10px;
-    }
+  
 
   .stars{
   justify-self: end;
@@ -246,7 +290,7 @@ nav a:hover{
     /* activités*/
 
     .activite{
-      padding: 0 30px 0 30px;
+      padding: 0;
     }
 
     .activite-card{
@@ -254,7 +298,8 @@ nav a:hover{
      height: 450px;
      border-radius: 20px;
      overflow: hidden;
-     box-shadow: 2px 2px  #F2F2F2; 
+     box-shadow: 2px 2px  #F2F2F2;
+     color: black; 
 
     }
 
@@ -267,6 +312,7 @@ nav a:hover{
     .activite-card h3{
         padding-left: 10px;
         font-size: 16px;
+        margin-top: 13px;
     }
 
     .activite-bloc{
@@ -276,31 +322,73 @@ nav a:hover{
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
    /* Footer*/
 
 
-   footer{
+   .footer{
 
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     background-color: #F2F2F2;
-    height: 240px;
-    padding-top: 40px;
-    margin: 50px 30px 0 30px;
+    height: 230px;
+    padding-top: 25px;
+    margin-top: 30px;
     
    }
+
+   .foot{
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   height: 150px;
+   }
+
+    /* media queries*/
+
+
+    @media screen and (max-width: 992px){
+
+      
+
+      #flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+
+      .tablette{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .hebergement{
+
+        padding: 15px 25px 15px 25px;
+        
+      }
+
+      .populaire{
+
+        margin: 35px 0 15px 0;
+        padding: 15px 25px 15px 5px;
+        width: 100%;
+      }
+
+      .container1,.container2{
+        justify-content: space-around;
+      }
+
+      .activite{
+        width: 100%;
+        padding: 0;
+      }
+
+      .activite-card{
+        width: 200px;
+      }
+
+
+    }
