@@ -1,0 +1,191 @@
+body{
+    padding: 0;
+}
+
+main{
+    padding: 0 20px 0 20px;
+}
+
+header{
+
+    flex-direction: column;
+}
+
+header img{
+
+    margin: 25px auto;
+}
+
+header nav{
+
+    justify-content: space-between;
+    width: 100%;
+    gap: 0;
+}
+
+nav a{
+
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    border-bottom:  #F2F2F2;
+}
+nav a:hover{
+    border-top: 2px solid transparent;
+    border-bottom:2px solid #0065FC;
+}
+
+.trouvez{
+    width: 100%;
+   
+}    
+
+.trouvez h1{
+    height: 55px;
+    margin-bottom: 23px;
+}
+
+.recherche{
+
+    width: 100%;
+}
+
+input{
+    width: 230px;
+}
+
+.texte-none{
+    display: none;
+}
+
+.fa-magnifying-glass{
+    display: block;
+}
+
+form button{
+
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filtre{
+
+    width: 100%;
+}
+
+.box1{
+
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+   
+}
+  
+.filtre-container1,.filtre-container2{
+    width: 100%;
+}
+
+
+
+.bouton-filtre{
+    width: 50%;
+    justify-content: flex-start;
+}
+
+#flex{
+
+flex-direction: column-reverse;
+height: 50%px;
+}
+
+.card-text{
+    padding-left: 15px;
+    gap: 3px;
+}
+
+
+.populaire{
+    height: 30%;
+    padding: 0;
+    border-radius: 0;
+    padding-bottom: 40px;
+}
+
+.tablette{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pop-title{
+
+    padding: 15px 5px 10px 15px;
+}
+
+.pop-card{
+
+    width: 100%;
+    height: 150px;
+    margin-top: 5px;
+}
+
+.pop-card img{
+
+    width: 40%;
+}
+
+
+.hebergement{
+
+    height: 70%;
+    padding: 0;
+    background-color: white;
+    
+}
+
+
+.container1,.container2{
+
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.non{
+    display: none;
+}
+
+.card{
+
+    width: 100%;
+    height: 220px;
+}
+
+.activite-bloc{
+
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+.activite-card{
+
+    width: 100%;
+    height: 190px;
+}
+
+.footer{
+
+    flex-direction: column;
+    padding: 45px 0 60px 30px;
+    height: 520Px;
+    gap: 30px;  
+}
+
+footer p{
+    
+margin:0;
+}

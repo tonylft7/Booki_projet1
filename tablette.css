@@ -1,0 +1,73 @@
+:root{
+    --normal-text-size:14px;
+  }
+
+  body{
+    padding: 0 55px 0 55px;
+  }
+
+
+  .filtre-container1,.filtre-container2{
+
+    display: flex;
+    
+  }
+
+  #flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+  }
+
+  .tablette{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+  }
+
+  .hebergement{
+
+    padding: 15px 35px 15px 35px;
+    width: 100%;
+    
+  }
+
+  .populaire{
+
+    margin: 35px 0 15px 0;
+    padding: 20px 35px 15px 35px;
+    width: 100%;
+    height: 280px;
+  }
+
+  .pop-card{
+
+    
+    height: 140px;
+  }
+
+  .container1,.container2{
+    justify-content: space-around;
+  }
+
+  .activite{
+    width: 100%;
+    padding: 0;
+  }
+
+  .activite-card{
+    
+    height: 280px;
+  }
+
+  .activite-card img{
+
+    height: 80%;
+  }
+
+  .activite-card h3{
+    margin: 0;
+  }
+
+

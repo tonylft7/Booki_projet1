@@ -1,7 +1,11 @@
 /*general*/
 
+:root{
+  --normal-text-size:16px;
+}
+
 *{
-    border: solid 2px blueviolet;
+    border: solid 1px blueviolet;
      
 }
 
@@ -11,12 +15,49 @@
   box-sizing: border-box;
 }
 
+
+h1{
+  font-weight: bolder;
+}
+h2{
+
+  font-size: 22px;
+  font-weight: bold;
+}
+
+h3{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#flex p{
+  font-size: 14px;
+}
+
 .fa-solid{
   color: #0065FC;
+ 
+}
+
+.fa-star{
+
+  height: 12px;
+  width: 12px;
+}
+
+.fa-magnifying-glass{
+  color: white;
+  display:none ;
+}
+
+.grey-star fa-star{
+  color: black;
 }
 
 a{
-  text-decoration: none;       
+  text-decoration: none;
+  color: black; 
+  font-size: 16px;      
  
 }
 
@@ -28,16 +69,24 @@ a{
 
 body{
     margin: 0;
-    padding: 0 30px 0 30px;
+    padding: 0 40px 0 40px;
     font-family: 'Raleway', sans-serif;
-    max-width: 1400px;
+    max-width: 1400;
+    width: 100%;
 }
 
 /* header*/
 
-header nav img{
+header{
+  display: flex;
+  justify-content: space-between;
+}
+
+header  img{
 width: 60px;
 height: 19px;
+margin-top: 40px;
+
 
 
 
@@ -45,27 +94,25 @@ height: 19px;
 
 header nav{
     display: flex;
-    justify-content: space-between;
+    gap: 60px;
     align-items: center;
-    padding-top:15px ;
     height: 100px;
     
 }
 
-nav ul{
-    display: flex;
-    list-style: none; 
-    height: 100%;  
-}
+nav a{
 
-nav li{
-    margin:0 67px 0 77px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 50px;
 }
 
 
 
 nav a:hover{
     border-top: 2px solid #0065FC;
+    color: #0065FC;
 }
 
 
@@ -75,7 +122,7 @@ nav a:hover{
    section h1{
     margin-bottom: 15px;
     height: 26px;
-    margin-top: 63px;
+    margin-top: 30px;
 }
 
    h1 p{
@@ -94,9 +141,9 @@ nav a:hover{
    .recherche{
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: ;
         margin-right: 55px;
-        width: 250px;
+        width: 500px;
         margin-top: 20px;
     }
 
@@ -110,6 +157,10 @@ nav a:hover{
         border-radius: 10px 0 0 10px;
     }
 
+    .fa-location-dot{
+      color: black;
+    }
+
    form button{
         background-color: #0065FC;
         border-radius: 0 15px 15px 0;
@@ -121,16 +172,22 @@ nav a:hover{
     }
 
    input{
-        width: 132px;
+        width: 190px;
         height:43px ;
+        padding-left: 6px;
         border: 1px solid #F2F2F2;
-        outline: none;   
+        outline: none;  
+        font-weight: bold;
+        color: black; 
     }
+
+  /* filtre*/
+
 
   .filtre{
         display: flex;
         flex-direction: column;
-        width: 800px;   
+        width: 90%;   
     }
 
   .filtre-icon{
@@ -142,9 +199,23 @@ nav a:hover{
         flex-direction: row;
         margin-bottom: 25px;
         margin-top: 32px;
-        justify-content: space-between;
-        align-items: center;
+        justify-content: ;
+        align-items: center;      
     }
+
+.box1 h3{
+
+  margin-right: 15px;
+}
+
+.filtre-container1,.filtre-container2{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
   .box2{
         display: flex;
         flex-direction: row;
@@ -159,17 +230,22 @@ nav a:hover{
     .fa-info{
       border: 2px solid  #F2F2F2;
       border-radius: 50%;
-      width: 20px;
-      height: 20px;
+      width: 25px;
+      height: 25px;
      
     }
 
   .bouton-filtre{
-        border: 2px solid grey;
+        border: 2px solid  #D9D9D9;
+        font-weight: bold;
         border-radius: 25px;
         height: 50px;
-        padding: 0 5px 0 5px;
+        padding: 0 15px 0 15px;
+        margin-right: 15px;
         background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .bouton-filtre:hover{
@@ -182,13 +258,14 @@ nav a:hover{
   .hebergement{
         border-radius: 15px;
         background-color:  #F2F2F2;
-        padding: 0px 40px 0 20px;
+        padding: 0px 40px 0 40px;
         margin-top:  40px;
-        flex: 2;
+        width: 65%;
+        
     }
 
-  .hebergement h1{
-        margin: 0px 0px 25px 0px;
+  .hebergement h2{
+        
         padding-top: 25px;
         padding-bottom: 25px;
     }
@@ -196,12 +273,13 @@ nav a:hover{
     
 
   .card{
-    height: 220px;
-    width: 240px;
+    height: 210px;
+    width: 100%;
     border-radius: 20px;
     border: 5px solid white;
     background-color: white;
     color: black;
+    box-shadow: 2px 2px lightgrey;
    }
 
 
@@ -218,27 +296,37 @@ nav a:hover{
     flex-direction: column;
     justify-content: space-between;
     height: 70px;
-    padding-left: 5px;
-    padding-bottom: 5px;
+    padding: 5px 0 5px 5px;
     background-color: white;
+  }
+
+  .card-text H3,p{
+
+    margin-bottom: 5px;
   }
 
   .container1,.container2{
     display: flex;
     gap: 30px;
     margin-bottom: 30px;
+    
+  }
+
+  .prop{
+
+    flex: 1;
   }
 
   /* populaire*/
 
   .populaire{
-    width:;
+    
     height: 720px;
     background-color:  #F2F2F2;
-    border-radius: 20px;
+    border-radius: 25px;
     padding: 30px 30px 30px 30px;
     margin: 40px 0 0 40px;
-    flex: 1;
+    width: 35%;
     }
    
 
@@ -250,7 +338,7 @@ nav a:hover{
     }
 
   .pop-card{
-    width: 343px;
+    width: 100%;
     height: 170px;
     border-radius: 20px;
     border: 5px solid white;
@@ -259,6 +347,7 @@ nav a:hover{
     background-color: white;
     margin-top: 30px;
     overflow: hidden;
+    box-shadow: 2px 2px lightgrey;
     }
 
  .pop-card img{ 
@@ -277,7 +366,10 @@ nav a:hover{
   
 
   .stars{
-  justify-self: end;
+  display: flex;
+  gap: 7px;
+  justify-content: flex-start;
+ 
   }
 
 
@@ -290,16 +382,24 @@ nav a:hover{
     /* activités*/
 
     .activite{
-      padding: 0;
+
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .activite H2{
+      margin: 40px 0 20px 0 ;
     }
 
     .activite-card{
-     width: 300px;  
+    
      height: 450px;
      border-radius: 20px;
      overflow: hidden;
      box-shadow: 2px 2px  #F2F2F2;
      color: black; 
+     flex:1 ;
 
     }
 
@@ -310,16 +410,21 @@ nav a:hover{
     }
 
     .activite-card h3{
-        padding-left: 10px;
+        padding-left: 15px;
         font-size: 16px;
-        margin-top: 13px;
+        margin-top: 25px;
+        font-weight: bold;
     }
 
     .activite-bloc{
         display: flex; 
         flex-direction: row;
-        justify-content: space-between;
+        gap: 35px;
+       
     }
+
+   
+   
 
 
    /* Footer*/
@@ -329,11 +434,10 @@ nav a:hover{
 
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     background-color: #F2F2F2;
     height: 230px;
-    padding-top: 25px;
-    margin-top: 30px;
+    padding: 35px 0 0 85px;
+    margin-top: 50px;
     
    }
 
@@ -341,54 +445,13 @@ nav a:hover{
 
    display: flex;
    flex-direction: column;
-   justify-content: space-around;
+   gap: 15px;
+   margin-right: 105px;
    height: 150px;
    }
 
     /* media queries*/
 
 
-    @media screen and (max-width: 992px){
-
+    
       
-
-      #flex{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-      }
-
-      .tablette{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-      }
-
-      .hebergement{
-
-        padding: 15px 25px 15px 25px;
-        
-      }
-
-      .populaire{
-
-        margin: 35px 0 15px 0;
-        padding: 15px 25px 15px 5px;
-        width: 100%;
-      }
-
-      .container1,.container2{
-        justify-content: space-around;
-      }
-
-      .activite{
-        width: 100%;
-        padding: 0;
-      }
-
-      .activite-card{
-        width: 200px;
-      }
-
-
-    }
